@@ -10,5 +10,12 @@
   "scripts": {
     "dev": "nodemon",
     "start": "node index.js"
-  }
+  },
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

@@ -12,6 +12,6 @@ docker push "$DOCKER_USERNAME"/multi-worker:$SHA
 
 # Force update to the latest SHA to the cluster 
 kubectl apply -f ./k8s
-kubectl set image deployments/multi-client-deployment client="$DOCKER_USERNAME"/multi-client:$SHA
-kubectl set image deployments/multi-server-deployment server="$DOCKER_USERNAME"/multi-server:$SHA
-kubectl set image deployments/multi-worker-deployment worker="$DOCKER_USERNAME"/multi-worker:$SHA
+kubectl set image deployments/client-deployment client="$DOCKER_USERNAME"/multi-client:$SHA
+kubectl set image deployments/server-deployment server="$DOCKER_USERNAME"/multi-server:$SHA
+kubectl set image deployments/worker-deployment worker="$DOCKER_USERNAME"/multi-worker:$SHA

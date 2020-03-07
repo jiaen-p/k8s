@@ -12,6 +12,6 @@ docker push jiaenpan/multi-worker:$SHA
 
 # Force update to the latest SHA to the cluster 
 kubectl apply -f ./k8s
-kubectl set image deployment/multi-client-deployment client=jiaenpan/multi-client:$SHA
-kubectl set image deployment/multi-server-deployment server=jiaenpan/multi-server:$SHA
-kubectl set image deployment/multi-worker-deployment worker=jiaenpan/multi-worker:$SHA
+kubectl set image deployments/multi-client-deployment client=jiaenpan/multi-client:$SHA
+kubectl set image deployments/multi-server-deployment server=jiaenpan/multi-server:$SHA
+kubectl set image deployments/multi-worker-deployment worker=jiaenpan/multi-worker:$SHA
